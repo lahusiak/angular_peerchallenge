@@ -29,6 +29,16 @@ module.exports = function(grunt){
                 ],
                 "dest": "server/public/vendors/"
             },
+            angularjsdatepicker: {
+                expand: true,
+                cwd: 'node_modules/angularjs_datepicker/dist',
+                src: [
+                    "angular-datepicker.min.css",
+                    "angular-datepicker.min.js",
+                    "angular-datepicker.sourcemap.map"
+                ],
+                "dest": "server/public/vendors/"
+            },
             html: {
                 expand: true,
                 cwd: 'client/views/',

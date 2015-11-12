@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <title>Peer Angular Challenge</title>
     <!--<STYLES>-->
+    <link rel="stylesheet" href="/vendors/angular-datepicker.min.css"/>
     <link rel="stylesheet" href="/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
+
     <!--SCRIPTS-->
     <script type="text/javascript" src="/vendors/angular.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-datepicker.min.js"></script>
 
 </head>
-<p>
-        <div class = "container">
-            <div ng-controller="firstController">
-                    <p>Zetans!</p>
-                <button ng-click="sortByName()">Sort by Name</button>
-                <button ng-click="sortByLocation()">Sort by Location</button>
-                <button ng-click="sortByNumber()">Sort by Number</button>
-                <div ng-repeat = "person in nameArray | orderBy: sortFilter">
-                    <zeta-info info="person"></zeta-info>
-        </div>
-        </div>
-        </div>
+
+    <datepicker>
+        <input ng-model="date" type="text" date-format="MM-dd-YYYY" placeholder="Choose a date"/>
+            <input />
+
+
+        </datepicker>
+    </datepicker>
+<!--<div ng-controller="AppCtrl" style='padding: 40px;' ng-cloak>-->
+            <!--<md-content>-->
+                <!--<h4>Standard date-picker</h4>-->
+                <!--<md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>-->
+                <!--</md-content>-->
+        <!--</div>-->
+        <!--<div class = "container">-->
+            <!--<div ng-controller="firstController">-->
+                    <!--<p>Zetans!</p>-->
+                <!--<button ng-click="sortByName()">Sort by Name</button>-->
+                <!--<button ng-click="sortByLocation()">Sort by Location</button>-->
+                <!--<button ng-click="sortByNumber()">Sort by Number</button>-->
+                <!--<div ng-repeat = "person in nameArray | orderBy: sortFilter">-->
+                    <!--<zeta-info info="person"></zeta-info>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 </body>
 </html>
